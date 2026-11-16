@@ -31,3 +31,14 @@
 .breakdown{display:grid;gap:11px}.breakdown-row{display:grid;gap:6px}.breakdown-label{display:flex;justify-content:space-between;font-size:12px;gap:8px}.breakdown-label span{color:#bcc8df}.bar-track{height:7px;background:rgba(255,255,255,.07);border-radius:20px;overflow:hidden}.bar-track>div{height:100%;background:linear-gradient(90deg,#8c74e6,#4ce3d1);border-radius:20px}
 .delete-choices{display:grid;gap:9px}.delete-choice{border:1px solid #485471;background:rgba(255,255,255,.04);border-radius:12px;color:white;text-align:left;padding:12px;display:grid;gap:4px}.delete-choice:hover{background:rgba(162,136,255,.15)}.delete-choice small{color:#b0bdd4}
 @media(max-width:760px){.today-address-card{grid-template-columns:53px minmax(0,1fr);padding:12px;gap:8px}.today-time{font-size:17px}.today-place strong{font-size:13px}.today-buttons{grid-column:2;justify-content:flex-start;flex-wrap:wrap}.today-buttons .secondary-btn{padding:7px 9px}.monthly-stats strong{font-size:15px}.monthly-stats>div{padding:9px}.monthly-report .panel-heading{align-items:start;flex-wrap:wrap}.month-selector{width:100%;justify-content:flex-start}.today-primary{padding:15px}}
+/* v0.4: compact in-place voice review and appointments without a specified time */
+.no-time-label{display:block;font-size:10px;line-height:1.35;font-weight:600;color:#a3b4cd;overflow-wrap:anywhere}
+.voice-review{display:grid;gap:0;border:1px solid rgba(177,169,255,.18);background:rgba(255,255,255,.035);border-radius:14px;overflow:hidden}
+.voice-review-row{padding:9px 12px;display:grid;grid-template-columns:minmax(92px,35%) 1fr;align-items:start;gap:10px;border-bottom:1px solid rgba(255,255,255,.07);font-size:12px}
+.voice-review-row:last-child{border-bottom:0}
+.voice-review-row span{color:#a1aec9}.voice-review-row strong{color:#eef0ff;overflow-wrap:anywhere}
+.voice-review-prompt{color:#dfd5ff;font-size:13px;line-height:1.6;text-align:center}
+.voice-stage.compact{padding:4px 0 12px;gap:8px}
+.voice-stage.compact .voice-button{width:65px;height:65px}.voice-stage.compact .voice-button svg{width:27px;height:27px}
+.voice-review-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.voice-review-actions button{min-width:0;white-space:normal;font-size:12px;line-height:1.35;padding:11px 8px}
