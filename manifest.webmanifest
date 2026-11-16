@@ -1,24 +1,37 @@
 {
-  "name": "AI IA — Personal Voice Organizer",
+  "id": "./",
+  "name": "AI IA — შენი პირადი ასისტენტი",
   "short_name": "AI IA",
-  "description": "Voice-first schedule and money journal",
-  "start_url": "./",
+  "description": "ხმოვანი შეხვედრები, დღევანდელი მისამართები, ფინანსები და შეხსენებები",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "background_color": "#0b1020",
   "theme_color": "#0b1020",
+  "lang": "ka",
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "./icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
