@@ -1,6 +1,6 @@
-// Offline support for AI IA v0.4. Each path is relative to the app scope (works on GitHub Pages subpaths).
-const CACHE_NAME='aiia-offline-v4';
-const PRECACHE=['./','./index.html','./styles.css?v=4','./app.js?v=4','./manifest.webmanifest?v=4','./favicon.png','./icon-192.png','./icon-512.png','./icon-maskable-512.png'];
+// Offline support for AI IA v0.5. Each path is relative to the app scope (works on GitHub Pages subpaths).
+const CACHE_NAME='aiia-offline-v5';
+const PRECACHE=['./','./index.html','./styles.css?v=5','./app.js?v=5','./manifest.webmanifest?v=5','./favicon.png','./icon-192.png','./icon-512.png','./icon-maskable-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(PRECACHE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('aiia-offline-')&&key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',event=>{
